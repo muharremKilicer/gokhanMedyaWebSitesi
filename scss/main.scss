@@ -1,0 +1,371 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&subset=latin-ext);
+
+$color1: #232323;
+$color2: #F0F0F0;
+$font-family: 'Josefin Sans', sans-serif;
+ 
+@mixin cover-background($img-url) {
+    background: url($img-url) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@mixin text-info1() {
+    text-align: center;
+	color: #fff;
+	width: 100%;
+}
+
+body, html { 
+	font-family: $font-family;
+    height: 100%;
+    width: 100%;
+}
+
+/*Video*/
+
+	.video{
+		padding:0px;
+		video {
+		    min-width: 100%;
+		    min-height: 100%;
+		    position: fixed;
+		    left: 0;
+		    top: 0;
+		    z-index: -1;
+		}
+		.hakkimizda {
+			h1{
+			    text-transform: uppercase;
+			    margin-top: 100px;
+			    font-size: 15.0vh;
+			    font-weight: 600;
+				@include text-info1();
+			}
+		    p{
+			    margin-bottom: 100px;
+				font-size: 5.0vh;
+				font-weight: 300;
+				@include text-info1();
+		    }
+		}
+		.content{
+			height: auto;
+			background-color: #fff;
+			color: $color1;
+			padding:0px 15px 35px 15px;
+			i{
+				color: #26486B;
+			}
+			p{
+				font-size: 17px;
+			}
+			.col-sm-12 h1{
+				margin-top: 45px;
+				margin-bottom: 45px
+			}
+			.col-sm-4 img{
+				width: 100%;
+				height: 345px;
+			}
+			.container{
+				margin-bottom: 35px;
+			}
+			.join-us{
+			    text-transform: uppercase;
+				padding:55px;
+			}
+		}
+	}
+
+/*Navbar Bolumu*/
+	.navbar-default{
+		padding-top:15px;
+		border:0px;
+		background-color:#fff;
+		.navbar-brand  {
+		    transform: translateX(-50%);
+		  	left: 50%;
+		  	position: relative;
+	    }
+		.navbar-collapse{
+			border:0px;
+			margin-top: 30%;
+			.navbar-nav{
+				li{
+					text-align: center;
+					a{
+						text-transform:uppercase;
+						border:0px;
+						color: #232323;
+						font-size: 20px;
+						padding:15px;
+						font-weight: 300;
+						&:hover{
+							background-color:$color2;
+						}
+					}
+				}
+			}
+		}
+		.footer {
+		  position: absolute;
+		  bottom: 0;
+		  width: 100%;
+		  padding: 25px;
+		  text-align: center;
+		  i{
+		  	font-size: 20px;
+		  	color: #232323;
+		  	padding:5px;
+		  }
+		  p{
+		  	margin: 15px;
+		  }
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.navbar-default{
+			.navbar-brand{
+			  	margin-top: -20px;
+			}
+			.navbar-collapse{
+				margin-top: 15px;
+				.navbar-nav{
+					li{
+						a:hover{
+							background-color:$color2;
+						}
+					}
+				}
+			}
+		}
+		.footer {
+			display: none;
+	   	}
+	    .video .hakkimizda h1{
+			font-size: 10.0vh;
+		}
+	}
+
+/* Content Bolumu */
+	.content{
+		text-align:center;
+		background-color:$color1;
+		color:#fff;
+		padding:0px;
+		height:100vh;
+		left:0;
+		position:relative;
+		.container{
+			width: 100%;
+		}
+	}
+
+	.content-slide{
+		text-align:center;
+		background-color:$color1;
+		color:#fff;
+		padding:0px;
+		height:100vh;
+		left:0;
+		position:relative;
+	}
+	
+/* İletisim Bolumu*/
+	.contact{
+		@include cover-background('../img/contactr3.jpg');
+		h1{
+			color: #000;
+			font-size: 55px;
+			text-align:left;
+			margin-top: 5%;
+			margin-bottom: 7%;
+			padding-left:25px;
+			font-weight: 300;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.contact{
+			h1{
+				padding-top: 11px;
+				font-size: 45px;
+				color: $color1;
+			}
+		}
+	}
+
+/* Input Styles */
+  .form{
+    width: 100%;
+    padding: 15px;
+    background:#fff;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:$color1 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    &:hover{
+    	border:1px solid $color1;
+    }
+    &:focus{
+	    color: white;
+	    outline: none;
+	    border:1px solid $color1;
+    }
+  }
+
+  .textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+/* Send Button Styles */
+  .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:25px;
+    font-size: 17px;
+    color:$color1;
+    background:#fff;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    &:hover{
+    	background:#111;
+	    color: white;
+	    border:none;
+    }
+    &:active{
+    	opacity: 0.5;
+    }
+  }
+
+/*Content Slider Bolumu*/
+	.carousel,
+	.item,
+	.active {
+	    height: 100%;
+	}
+
+	.carousel-inner {
+	    height: 100%;
+	}
+	.carousel-fade {
+	    .carousel-inner {
+	        .item {
+	            transition-property: opacity;
+	        }
+	        
+	        .item,
+	        .active.left,
+	        .active.right {
+	            opacity: 0;
+	        }
+
+	        .active,
+	        .next.left,
+	        .prev.right {
+	            opacity: 1;
+	        }
+
+	        .next,
+	        .prev,
+	        .active.left,
+	        .active.right {
+	            left: 0;
+	            transform: translate3d(0, 0, 0);
+	        }
+	    }
+
+	    .carousel-control {
+	        z-index: 2;
+	    }
+	}
+
+	.content-slide{
+		background-color:#000;
+		.item img{
+		  width:150% !important;
+			height:100% !important;
+			object-fit: cover;
+			width:100%;
+			height:100%;
+			opacity:0.5
+		}
+	}
+
+	.item {
+		display: inline-block;
+		width:150% !important;
+		height:100% !important;
+	    font-size: 1px;
+	    padding: 1px;
+	    color: white;
+	    margin-right: 5px;
+	    margin-left: 5px;
+	    animation: skew 10s infinite;
+	    animation-direction: infinite;
+	    opacity: .7;
+	}
+
+	@keyframes skew {
+	  0% {
+	    -moz-transform: translateX(0);
+				-webkit-transform: translateX(0);
+				-ms-transform: translateX(0);
+				transform: translateX(0);
+	  }
+	  100% {
+	    -moz-transform: translateX(-5%);
+				-webkit-transform: translateX(-5%);
+				-ms-transform: translateX(-5%);
+				transform: translateX(-5%);
+	  }
+	}
+
+/*Porfolio Bolumu*/
+	.projects{
+		p{
+			margin: 10px;
+			padding:10px; 
+			border-bottom: 1px #ccc dotted; 
+			text-decoration: none; 
+			text-transform:uppercase; 
+			font-size: 12px; color: #333; 
+			display:block; 
+			float:left;
+		}
+		p:hover { cursor:pointer; background: $color1; color:#fff; }
+
+		#portfolio{ 
+			width:100%; 
+			margin:20px 0px; 
+			.thumbnail img{
+				width:100%;
+				height:150px;
+			}
+		}
+	}
+
+
+
+
+
+
+

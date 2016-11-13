@@ -1,0 +1,337 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&subset=latin-ext);
+body, html {
+  font-family: "Josefin Sans", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+/*Video*/
+.video {
+  padding: 0px;
+}
+.video video {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.video .hakkimizda h1 {
+  text-transform: uppercase;
+  margin-top: 100px;
+  font-size: 15.0vh;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+.video .hakkimizda p {
+  margin-bottom: 100px;
+  font-size: 5.0vh;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+.video .content {
+  height: auto;
+  background-color: #fff;
+  color: #232323;
+  padding: 0px 15px 35px 15px;
+}
+.video .content i {
+  color: #26486B;
+}
+.video .content p {
+  font-size: 17px;
+}
+.video .content .col-sm-12 h1 {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.video .content .col-sm-4 img {
+  width: 100%;
+  height: 345px;
+}
+.video .content .container {
+  margin-bottom: 35px;
+}
+.video .content .join-us {
+  text-transform: uppercase;
+  padding: 55px;
+}
+
+/*Navbar Bolumu*/
+.navbar-default {
+  padding-top: 15px;
+  border: 0px;
+  background-color: #fff;
+}
+.navbar-default .navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: relative;
+}
+.navbar-default .navbar-collapse {
+  border: 0px;
+  margin-top: 30%;
+}
+.navbar-default .navbar-collapse .navbar-nav li {
+  text-align: center;
+}
+.navbar-default .navbar-collapse .navbar-nav li a {
+  text-transform: uppercase;
+  border: 0px;
+  color: #232323;
+  font-size: 20px;
+  padding: 15px;
+  font-weight: 300;
+}
+.navbar-default .navbar-collapse .navbar-nav li a:hover {
+  background-color: #F0F0F0;
+}
+.navbar-default .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+}
+.navbar-default .footer i {
+  font-size: 20px;
+  color: #232323;
+  padding: 5px;
+}
+.navbar-default .footer p {
+  margin: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-default .navbar-brand {
+    margin-top: -20px;
+  }
+  .navbar-default .navbar-collapse {
+    margin-top: 15px;
+  }
+  .navbar-default .navbar-collapse .navbar-nav li a:hover {
+    background-color: #F0F0F0;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .video .hakkimizda h1 {
+    font-size: 10.0vh;
+  }
+}
+/* Content Bolumu */
+.content {
+  text-align: center;
+  background-color: #232323;
+  color: #fff;
+  padding: 0px;
+  height: 100vh;
+  left: 0;
+  position: relative;
+}
+.content .container {
+  width: 100%;
+}
+
+.content-slide {
+  text-align: center;
+  background-color: #232323;
+  color: #fff;
+  padding: 0px;
+  height: 100vh;
+  left: 0;
+  position: relative;
+}
+
+/* ─░letisim Bolumu*/
+.contact {
+  background: url("../img/contactr3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.contact h1 {
+  color: #000;
+  font-size: 55px;
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  padding-left: 25px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .contact h1 {
+    padding-top: 11px;
+    font-size: 45px;
+    color: #232323;
+  }
+}
+/* Input Styles */
+.form {
+  width: 100%;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  margin-bottom: 25px;
+  color: #232323 !important;
+  font-size: 13px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.form:hover {
+  border: 1px solid #232323;
+}
+.form:focus {
+  color: white;
+  outline: none;
+  border: 1px solid #232323;
+}
+
+.textarea {
+  height: 200px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+/* Send Button Styles */
+.form-btn {
+  width: 180px;
+  display: block;
+  height: auto;
+  padding: 25px;
+  font-size: 17px;
+  color: #232323;
+  background: #fff;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: auto;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+.form-btn:hover {
+  background: #111;
+  color: white;
+  border: none;
+}
+.form-btn:active {
+  opacity: 0.5;
+}
+
+/*Content Slider Bolumu*/
+.carousel,
+.item,
+.active {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.content-slide {
+  background-color: #000;
+}
+.content-slide .item img {
+  width: 150% !important;
+  height: 100% !important;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.item {
+  display: inline-block;
+  width: 150% !important;
+  height: 100% !important;
+  font-size: 1px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: skew 10s infinite;
+  animation-direction: infinite;
+  opacity: .7;
+}
+
+@keyframes skew {
+  0% {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -moz-transform: translateX(-5%);
+    -webkit-transform: translateX(-5%);
+    -ms-transform: translateX(-5%);
+    transform: translateX(-5%);
+  }
+}
+/*Porfolio Bolumu*/
+.projects p {
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 1px #ccc dotted;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #333;
+  display: block;
+  float: left;
+}
+.projects p:hover {
+  cursor: pointer;
+  background: #232323;
+  color: #fff;
+}
+.projects #portfolio {
+  width: 100%;
+  margin: 20px 0px;
+}
+.projects #portfolio .thumbnail img {
+  width: 100%;
+  height: 150px;
+}
+
+/*# sourceMappingURL=main.css.map */

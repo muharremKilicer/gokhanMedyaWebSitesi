@@ -1,0 +1,17 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 80px;
+  background-color: red;
+}
+
+/* Burasi nasil calisiyor. Arastir? */
+@media (max-width: 768px) {
+	.footer {
+		display: none;
+	}
+}
